@@ -13,7 +13,8 @@ class FavoritesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var appProvider = context.watch<AppDataProvider>();
-    List<WordPair> favorites = appProvider.favorites;
+    // List<WordPair> favorites = appProvider.favorites;
+    Set<WordPair> favorites = appProvider.favorites;
     if(favorites.isEmpty){
       return const Center(
           child: SmallText(

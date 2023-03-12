@@ -17,7 +17,8 @@ class HomePage extends StatelessWidget {
 
     Color textOrIconColor = appTheme.colorScheme.primary;
     WordPair namePair = appProvider.namePair;
-    List<WordPair> favorites = appProvider.favorites;
+    // List<WordPair> favorites = appProvider.favorites;
+    Set<WordPair> favorites = appProvider.favorites;
     IconData iconData;
     if (favorites.contains(namePair)) {
       iconData = Icons.favorite;

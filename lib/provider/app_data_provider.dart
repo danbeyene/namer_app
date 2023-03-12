@@ -3,7 +3,8 @@ import 'package:flutter/cupertino.dart';
 
 class AppDataProvider extends ChangeNotifier{
   WordPair namePair= WordPair.random();
-  List<WordPair> favorites=[];
+  //List<WordPair> favorites=[];
+  Set<WordPair> favorites={};
   void nextNamePair(){
     namePair= WordPair.random();
     notifyListeners();
